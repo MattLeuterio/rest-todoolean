@@ -15,34 +15,29 @@
     
     <div class="app">
         <header class="main-header">
-            <h1 class="title">Todo<span>lean</span></h1>
+            <h1 class="title">Todoo<span>lean</span></h1>
         </header>
 
         <main class="main-todo">
             <section class="input-section">
-                <input id="input" type="text">
+                <input id="input" type="text" placeholder="Nuovo todo">
                 <button class="new-todo_btn">Add</button>
             </section>
             <section class="todos-section">
                 <ul class="todo-list">
                     <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
-                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
-                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
-                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
                 </ul>
             </section>
         </main>
-
-
     </div>
     
 
 
     <!-- handlebars -->
     <script id="todo-template" type="text/x-handlebars-template">
-        <li class="todo-item u_flex" data-id='{{ id }}'>
+        <li class="todo-item u_flex" >
             {{ todo }} 
-            <span class="delete"><i class="far fa-trash-alt"></i></span>
+            <span class="delete" data-id='{{ id }}'><i class="far fa-trash-alt"></i></span>
         </li>
     </script>
 
