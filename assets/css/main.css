@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: #ff4f4f;
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* UTILITY */
+
+.u_flex {
+    display: flex;
+}
+
+.u_flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.u_pRelative {
+    position: relative;
+}
+
+.u_pAbsolute {
+    position: absolute;
+}
+
+/* app */
+
+.app {
+    width: 600px;
+    min-height: 500px;
+    padding: 20px;
+    background: #234;
+    border-radius: 3px;
+}
+
+/* header */
+
+.main-header {
+    margin-bottom: 20px;
+}
+
+.title span {
+    font-weight: 100;
+}
+
+/* main */
+
+.main-todo {
+
+}
+
+.input-section {
+
+}
+
+#input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background: #ff4f4f;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.new-todo_btn {
+    padding: 0 25px;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    background: #ff4f4f;
+    color: #fff;
+}
+
+.todos-section {
+    margin-top: 20px;
+}
+
+.todo-item {
+    padding: 10px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.todo-item:last-child {
+    border: 0;
+}
+
+.delete {
+    margin-right: 5px;
+}
+
+.delete:hover {
+    cursor: pointer;
+    color: rgb(211, 60, 60);
+}

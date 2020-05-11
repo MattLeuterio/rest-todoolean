@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoolean</title>
+     <!-- Main CSS -->
+     <link rel="stylesheet" href="assets/css/main.css">
+     <!-- Google Font | Roboto -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+     <!-- FontAwesome -->
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
+</head>
+<body class="u_flex">
+    
+    <div class="app">
+        <header class="main-header">
+            <h1 class="title">Todo<span>lean</span></h1>
+        </header>
+
+        <main class="main-todo">
+            <section class="input-section">
+                <input id="input" type="text">
+                <button class="new-todo_btn">Add</button>
+            </section>
+            <section class="todos-section">
+                <ul class="todo-list">
+                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
+                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
+                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
+                    <li class="todo-item u_flex" data-id='1'>Test <span class="delete"><i class="far fa-trash-alt"></i></span></li>
+                </ul>
+            </section>
+        </main>
+
+
+    </div>
+    
+
+
+    <!-- handlebars -->
+    <script id="todo-template" type="text/x-handlebars-template">
+        <li class="todo-item u_flex" data-id='{{ id }}'>
+            {{ todo }} 
+            <span class="delete"><i class="far fa-trash-alt"></i></span>
+        </li>
+    </script>
+
+    <!-- JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
